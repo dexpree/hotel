@@ -1,0 +1,9 @@
+.profile-box {
+  max-width: 500px;
+  margin: auto;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

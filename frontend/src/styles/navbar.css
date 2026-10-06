@@ -1,0 +1,185 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:15px 30px;
+
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(12px);
+
+color:white;
+
+position:sticky;
+top:0;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   NAVBAR SECTIONS
+========================= */
+
+/* LEFT (menu icon) */
+.nav-left{
+width:160px;
+display:flex;
+align-items:center;
+}
+
+/* CENTER (hotel title) */
+.nav-center{
+flex:1;
+text-align:center;
+}
+
+/* RIGHT (logout) */
+.nav-right{
+width:120px;
+display:flex;
+justify-content:flex-end;
+}
+
+/* =========================
+   HOTEL NAME
+========================= */
+
+.hotel-name{
+font-size:40px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+
+text-shadow:0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   MENU ICON
+========================= */
+
+.menu-icon{
+font-size:36px;
+cursor:pointer;
+transition:0.2s;
+color:white;
+margin-left: 30px;
+}
+
+.menu-icon.open{
+transform:rotate(180deg);
+}
+
+.menu-icon:hover{
+transform:scale(1.1);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+position:fixed;
+
+left:-260px;
+top:0;
+
+width:250px;
+height:100%;
+
+background:#0f172a;
+
+padding:25px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
+
+transition:0.4s ease;
+
+z-index:200;
+
+box-shadow:4px 0 20px rgba(0,0,0,0.4);
+
+}
+
+/* SIDEBAR OPEN */
+
+.sidebar.open{
+left:0;
+}
+
+/* =========================
+   SIDEBAR BUTTONS
+========================= */
+
+.sidebar button{
+
+background:linear-gradient(135deg,#36d1dc,#5b86e5);
+
+border:none;
+
+padding:12px;
+
+border-radius:10px;
+
+color:white;
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.2s;
+margin-top: 35px;
+}
+
+.sidebar button:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 6px 14px rgba(0,0,0,0.3);
+
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn{
+
+font-size:22px;
+cursor:pointer;
+
+margin-bottom:20px;
+
+color:white;
+
+align-self:flex-end;
+
+transition:0.2s;
+}
+
+.close-btn:hover{
+transform:scale(1.2);
+}
+
+.back-btn{
+
+width:52px;
+height:52px;
+font-size: 30px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(24, 2, 2, 0.15);
+
+cursor:pointer;
+
+}

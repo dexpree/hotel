@@ -1,0 +1,22 @@
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header button {
+  background: #38bdf8;
+}
+
+.admin-header button:hover {
+  background: #0ea5e9;
+}
+
+h4 {
+  margin: 10px 0 5px;
+  color: #38bdf8;
+}
+
+select {
+  margin-top: 10px;
+}

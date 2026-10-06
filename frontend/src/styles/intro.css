@@ -1,0 +1,291 @@
+.intro-page{
+
+height:100vh;
+width:100%;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+background:
+radial-gradient(circle at top,#111827,#000);
+
+color:white;
+
+overflow:hidden;
+
+}
+
+/* HOTEL TITLE */
+
+.hotel-title{
+
+font-size:60px;
+color:gold;
+
+letter-spacing:3px;
+
+text-shadow:
+0 0 10px gold,
+0 0 25px gold;
+
+margin-bottom:20px;
+
+animation:fadeDown 1s ease;
+
+}
+
+/* GOLD LINE */
+
+.luxury-line{
+
+width:200px;
+height:3px;
+
+background:gold;
+
+margin-bottom:40px;
+
+animation:lineGlow 3s infinite alternate;
+
+}
+
+@keyframes lineGlow{
+
+from{box-shadow:0 0 5px gold}
+to{box-shadow:0 0 20px gold}
+
+}
+
+/* INTRO CONTENT */
+
+.intro-content{
+
+text-align:center;
+
+animation:fadeUp 1.5s ease;
+
+}
+
+.intro-content h2{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+/* TYPEWRITER TEXT */
+
+.typewriter{
+
+overflow:hidden;
+
+border-right:3px solid gold;
+
+white-space:nowrap;
+
+width:0;
+
+animation:
+typing 3s steps(30,end) forwards,
+blink .7s infinite;
+
+}
+
+@keyframes typing{
+
+from{width:0}
+to{width:100%}
+
+}
+
+@keyframes blink{
+
+50%{border-color:transparent}
+
+}
+
+/* SUB TEXT */
+
+.intro-content p{
+
+margin-top:20px;
+
+color:#d1d5db;
+
+font-size:18px;
+
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* LOADING BAR CONTAINER */
+
+.loading-container{
+
+width:260px;
+height:6px;
+
+background:#1f2937;
+
+border-radius:10px;
+
+margin-top:35px;
+
+overflow:hidden;
+
+}
+
+/* LOADING BAR */
+
+.loading-bar{
+
+height:100%;
+width:0;
+
+background:gold;
+
+border-radius:10px;
+
+animation:loading 5s linear forwards;
+
+}
+
+/* LOADING ANIMATION */
+
+@keyframes loading{
+
+from{
+width:0;
+}
+
+to{
+width:100%;
+}
+
+}
+/* PARTICLES CONTAINER */
+
+.particles{
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+/* PARTICLE */
+
+.particles span{
+
+position:absolute;
+
+width:6px;
+height:6px;
+
+background:gold;
+
+border-radius:50%;
+
+opacity:.7;
+
+animation:floatParticle linear infinite;
+
+}
+
+/* RANDOM POSITIONS */
+
+.particles span:nth-child(odd){
+
+animation-duration:12s;
+
+}
+
+.particles span:nth-child(even){
+
+animation-duration:18s;
+
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floatParticle{
+
+0%{
+
+transform:translateY(100vh) scale(.5);
+opacity:0;
+
+}
+
+20%{
+opacity:.7;
+}
+
+80%{
+opacity:.7;
+}
+
+100%{
+
+transform:translateY(-10vh) scale(1.2);
+opacity:0;
+
+}
+
+}
+/* PAGE FADE OUT */
+
+.fade-out{
+
+animation:fadeScreen 1s forwards;
+
+}
+
+@keyframes fadeScreen{
+
+from{
+opacity:1;
+}
+
+to{
+opacity:0;
+}
+
+}

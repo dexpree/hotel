@@ -1,0 +1,283 @@
+/* =========================
+   FILTER BAR
+========================= */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 15px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.filter-bar input{
+  width:220px;
+}
+
+.filter-bar select{
+  width:180px;
+}
+
+.checkbox{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:white;
+  font-weight:600;
+}
+
+/* CLEAR BUTTON */
+
+.clear-btn{
+  background:linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.clear-btn:hover{
+  transform:scale(1.05);
+}
+
+/* =========================
+   ROOM CARD
+========================= */
+
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+
+  padding:18px;
+  border-radius:20px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.35);
+
+  margin-bottom:20px;
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+/* =========================
+   ROOM HEADER
+========================= */
+
+.room-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* =========================
+   ROOM BADGES
+========================= */
+
+.room-badge{
+  padding:6px 12px;
+  border-radius:14px;
+  font-size:12px;
+  font-weight:bold;
+  color:white;
+}
+
+/* Badge colors */
+
+.badge-normal{
+  background:linear-gradient(135deg,#bdc3c7,#2c3e50);
+}
+
+.badge-standard{
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.badge-deluxe{
+  background:linear-gradient(135deg,#8e2de2,#4a00e0);
+}
+
+.badge-suite{
+  background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+.badge-executive{
+  background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.badge-vip{
+  background:linear-gradient(135deg,#f7971e,#ffd200);
+  color:black;
+}
+
+.badge-penthouse{
+  background:linear-gradient(135deg,#fc4a1a,#f7b733);
+}
+
+.badge-presidential{
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+}
+
+.badge-default{
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+/* =========================
+   STATUS TAGS
+========================= */
+
+.status{
+  display:inline-block;
+  margin-top:6px;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.available{
+  background:linear-gradient(135deg,#00b09b,#96c93d);
+  color:white;
+}
+
+.not-available{
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+  color:white;
+}
+
+/* =========================
+   IMAGE SLIDER
+========================= */
+
+.image-slider{
+  position:relative;
+  width:100%;
+}
+
+.room-image{
+  width:100%;
+  height:230px;
+
+  object-fit:cover;
+  border-radius:12px;
+
+  transition:transform .4s ease;
+  cursor:pointer;
+}
+
+.room-image:hover{
+  transform:scale(1.07);
+}
+
+/* =========================
+   IMAGE DOTS
+========================= */
+
+.image-dots{
+  display:flex;
+  justify-content:center;
+  gap:6px;
+  margin-top:8px;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#ccc;
+}
+
+.active-dot{
+  background:#22c55e;
+  transform:scale(1.3);
+}
+
+/* =========================
+   IMAGE MODAL
+========================= */
+
+.image-modal{
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,0.9);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:999;
+}
+
+.modal-image{
+  max-width:80%;
+  max-height:80%;
+  border-radius:14px;
+}
+
+.modal-btn{
+  position:absolute;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:40px;
+  background:none;
+  border:none;
+  color:white;
+
+  cursor:pointer;
+}
+
+.modal-btn.left{
+  left:40px;
+}
+
+.modal-btn.right{
+  right:40px;
+}
+
+.close-btn{
+  position:absolute;
+  top:25px;
+  right:35px;
+
+  font-size:28px;
+  background:none;
+  border:none;
+
+  color:white;
+  cursor:pointer;
+}
+
+/* =========================
+   NOTIFICATION BUBBLE
+========================= */
+
+.badge-count{
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+
+  color:white;
+
+  font-size:12px;
+  font-weight:bold;
+
+  padding:3px 9px;
+
+  border-radius:50px;
+
+  margin-left:8px;
+
+  min-width:22px;
+  text-align:center;
+
+  display:inline-block;
+}
